@@ -7,7 +7,7 @@ for (let element of linksa) {
     if (element == undefined){
         continue
     }
-  element.remove();
+  element.style.visibility = "hidden";
 }}
 
 
