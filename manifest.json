@@ -1,8 +1,7 @@
 {
-  "manifest_version": 2,
-  "name": "My Extension",
-  "version": "1.0",
-  "permissions": ["activeTab"],
+  "manifest_version": 3,
+  "name": "NoViewViews",
+  "version": "1.1",
   "content_scripts": [{
     "matches": ["https://twitter.com/*"],
     "js": ["background.js"]

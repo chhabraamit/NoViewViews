@@ -1,14 +1,24 @@
 
 function removeViews(){
-   linksa = document.querySelectorAll('a[aria-label*="View Tweet analytics"]');
+   groupTwo = document.querySelectorAll('a[href$="/analytics"]')
+   groupOne = document.querySelectorAll('a[aria-label*="View Tweet analytics"]');
 
 
-for (let element of linksa) {
+for (let element of groupOne) {
     if (element == undefined){
         continue
     }
-  element.remove();
-}}
+  element.style.visibility = "hidden";
+  }
+
+for (let element of groupTwo) {
+    if (element == undefined){
+        continue
+    }
+  element.style.visibility = "hidden";
+ }
+
+}
 
 
 
@@ -35,4 +45,3 @@ observer.observe(document.body, {
   childList: true,
   subtree: true
 });
-
